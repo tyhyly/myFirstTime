@@ -49,10 +49,10 @@
             background: url("img/page2.jpg") no-repeat 50% 50%;
         }
         #main ul li:nth-of-type(3){
-            background: url("img/page3.jpg") no-repeat center center;
+            background: url("img/page3.jpg") no-repeat 50% 50%;
         }
         #main ul li:nth-of-type(4){
-            background: url("img/page4.jpg");
+            background: url("img/bg7.jpg") no-repeat 100% 0%;
         }
         /*.p1_imgList{*/
             /*width:490px;*/
@@ -155,7 +155,7 @@
             width: 8%;
             height: 13%;
             z-index: 20;
-            animation: 2s linear move1;
+            animation: 1s linear move1;
             animation-fill-mode: both;
             -webkit-animation-fill-mode: both;
         }
@@ -165,18 +165,26 @@
                 transform: translate(0,0);
             }
             100%{
-                transform: translate(15.5rem,1.2rem);
+                transform: translate(13.5rem,1.2rem);
+            }
+        }
+        @-webkit-keyframes move1{
+            0%{
+                transform: translate(0,0);
+            }
+            100%{
+                transform: translate(13.5rem,1.2rem);
             }
         }
 
         .show img:nth-of-type(2){
             position: absolute;
-            top: 15px;
-            left: 185px;
+            top: 10px;
+            left: 145px;
             width: 8%;
             height: 13%;
             z-index: 20;
-            animation: 2s linear move2;
+            animation: 1.6s linear move2;
             animation-fill-mode: both;
             -webkit-animation-fill-mode: both;
         }
@@ -186,14 +194,22 @@
                 transform: translate(0,0);
             }
             100%{
-                transform: translate(120px,65px);
+                transform: translate(130px,85px);
+            }
+        }
+        @-webkit-keyframes move2{
+            0%{
+                transform: translate(0,0);
+            }
+            100%{
+                transform: translate(130px,85px);
             }
         }
 
         .show img:nth-of-type(3){
             position: absolute;
             top: 80px;
-            left: 305px;
+            left: 275px;
             width: 8%;
             height: 13%;
             z-index: 20;
@@ -207,13 +223,21 @@
                 transform: translate(0,0);
             }
             100%{
-                transform: translate(-215px,65px);
+                transform: translate(-225px,75px);
+            }
+        }
+        @-webkit-keyframes move3{
+            0%{
+                transform: translate(0,0);
+            }
+            100%{
+                transform: translate(-225px,75px);
             }
         }
         .show img:nth-of-type(4){
             position: absolute;
-            top: 130px;
-            left: 108px;
+            top: 120px;
+            left: 68px;
             width: 40%;
             height: 33%;
             z-index: 10;
@@ -242,7 +266,7 @@
         }
         .show img:nth-of-type(5){
             position: absolute;
-            top: 45px;
+            top: 25px;
             left: 123px;
             width: 38%;
             height: 43%;
@@ -272,11 +296,33 @@
         }
         .wall{
             position: absolute;
-            top: 20%;
+            top: 10%;
             left: 0;
             width: 100%;
             height: 44%;
             overflow: hidden;
+            animation: 2s linear move6
+        }
+        @-webkit-keyframes move6 {
+            0% {
+                -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+            }
+            100% {
+                -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
+            }
+        }
+
+        @keyframes move6 {
+            0% {
+                -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+            }
+            100% {
+                -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
+            }
         }
         .wall img{
             width: 100%;
@@ -300,15 +346,14 @@
         .last p{
             display: block;
             position: absolute;
-            font-size: 26px;
-            color: #000;
-            font-weight: 900;
+            font-size: 20px;
+            color: ghostwhite;
             left: 0;
             text-align: left;
             padding-left: 10px;
             width: 100%;
             height: 5%;
-            border-bottom: 2px dashed mediumblue;
+            border-bottom: 1px dotted lawngreen;
         }
 
         .last p:nth-of-type(1){
@@ -359,15 +404,15 @@
                 <img src="img/ball1.png" alt="" />
                 <img src="img/name.png" alt=""/>
                 <img src="img/school.png" alt=""/>
-                <img src="img/bg2.jpg" alt="" id="show2" class="animated bounceInRight"/>
-                <!--<img src="img/bg3.jpg" alt="" id="show3"/>-->
+                <!--<img src="img/bg2.jpg" alt="" id="show2" class="animated bounceInRight"/>-->
+                <img src="img/bg3.jpg" alt="" id="show3" class="animated bounceInRight"/>
                 <!--<img src="img/bg4.jpg" alt="" id="show4"/>-->
             </div>
             <img src="img/arr.png" alt="" class="p1_arr"/>
         </li>
         <li>
             <div class="wall">
-                <img src="img/show1biao.jpg" alt="" class="animated slideInUp"/>
+                <img src="img/show1biao.jpg" alt="" class="animated "/>
             </div>
             <div class="downWall animated zoomInDown">
                 <p class="a2">技能：H5、CSS3、JQuery、WebStorm、原生JS</p>
