@@ -10,6 +10,14 @@
             margin:0;
             padding:0;
             list-style: none;
+            font-size: 16px;
+        }
+        html{
+            font-size: 62.5%;
+        }
+        html body{
+            background: url("img/bg4.jpg");
+            width: 100%;
         }
         img{
             border: none;
@@ -46,17 +54,17 @@
         #main ul li:nth-of-type(4){
             background: url("img/page4.jpg");
         }
-        .p1_imgList{
-            width:490px;
-            margin: 0 auto;
-            height:151px;
-            position: relative;
-        }
+        /*.p1_imgList{*/
+            /*width:490px;*/
+            /*margin: 0 auto;*/
+            /*height:151px;*/
+            /*position: relative;*/
+        /*}*/
         .p1_imgList img{
             width: 30%;
             position: absolute;
-            left: 60px;
-            top:30px;
+            left: 18%;
+            top:5%;
         }
         .p1_img1{
             animation: 1s infinite imgActive;
@@ -131,13 +139,13 @@
             animation: 1s infinite arrMove;
         }
         @keyframes arrMove {
-            0%{transform: translateY(60px); opacity: 0}
-            50%{transform: translateY(30px); opacity: 0.8}
+            0%{transform: translateY(6rem); opacity: 0}
+            50%{transform: translateY(3rem); opacity: 0.8}
             100%{transform: translateY(0); opacity: 0}
         }
         @-webkit-keyframes arrMove {
-            0%{transform: translateY(60px); opacity: 0}
-            50%{transform: translateY(30px); opacity: 0.8}
+            0%{transform: translateY(6rem); opacity: 0}
+            50%{transform: translateY(3rem); opacity: 0.8}
             100%{transform: translateY(0); opacity: 0}
         }
         .show img:nth-of-type(1){
@@ -146,9 +154,10 @@
             left: 0;
             width: 8%;
             height: 13%;
-            z-index: 10;
+            z-index: 20;
             animation: 2s linear move1;
             animation-fill-mode: both;
+            -webkit-animation-fill-mode: both;
         }
 
         @keyframes move1{
@@ -156,7 +165,7 @@
                 transform: translate(0,0);
             }
             100%{
-                transform: translate(185px,15px);
+                transform: translate(15.5rem,1.2rem);
             }
         }
 
@@ -166,9 +175,10 @@
             left: 185px;
             width: 8%;
             height: 13%;
-            z-index: 10;
+            z-index: 20;
             animation: 2s linear move2;
             animation-fill-mode: both;
+            -webkit-animation-fill-mode: both;
         }
 
         @keyframes move2{
@@ -186,9 +196,10 @@
             left: 305px;
             width: 8%;
             height: 13%;
-            z-index: 10;
+            z-index: 20;
             animation: 2s linear move3;
             animation-fill-mode: both;
+            -webkit-animation-fill-mode: both;
         }
 
         @keyframes move3{
@@ -261,7 +272,7 @@
         }
         .wall{
             position: absolute;
-            top: 27%;
+            top: 20%;
             left: 0;
             width: 100%;
             height: 44%;
@@ -275,14 +286,14 @@
         .downWall{
             position: absolute;
             background: url("img/bg4.jpg") no-repeat center;
-            bottom:0;
+            bottom:10%;
             width: 100%;
             /*height: 100%;*/
-            height: 222px;
+            height: 24%;
         }
         .a2{
             padding-top: 10px;
-            font-size: 50%;
+            font-size: 33px;
             color: #FFFF00;
             text-align: center;
         }
@@ -294,7 +305,7 @@
             font-weight: 900;
             left: 0;
             text-align: left;
-            padding-left: 20px;
+            padding-left: 10px;
             width: 100%;
             height: 5%;
             border-bottom: 2px dashed mediumblue;
@@ -336,16 +347,16 @@
                 <img src="img/icon_1.png" alt=""/>
             </div>
             <div class="p1_footer">
-                <img src="img/icon_2.png" alt="" class="p1_ball animated rotateIn"/>
+                <!--<img src="img/icon_2.png" alt="" class="p1_ball animated rotateIn"/>-->
                 <img src="img/ball1.png" alt="" class="p1_car animated bounceInDown "/>
             </div>
             <img src="img/arr.png" alt="" class="p1_arr"/>
         </li>
         <li>
             <div class="show">
-                <img src="img/ball1.png" alt="" class="animated flipOutX"/>
-                <img src="img/ball1.png" alt="" class="animated flipOutX"/>
-                <img src="img/ball1.png" alt="" class="animated flipOutX"/>
+                <img src="img/ball1.png" alt=""/>
+                <img src="img/ball1.png" alt="" />
+                <img src="img/ball1.png" alt="" />
                 <img src="img/name.png" alt=""/>
                 <img src="img/school.png" alt=""/>
                 <img src="img/bg2.jpg" alt="" id="show2" class="animated bounceInRight"/>
